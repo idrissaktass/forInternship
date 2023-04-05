@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root{
+  background-color: cornsilk;
+}
+
+.card {
+  margin: 2rem;
+  padding: 1rem;
+  background-color: rgb(255 255 153) !important;
+}
+
+.card_header{
+  padding-top: 1rem;
+  text-align: center;
+  background-color: rgb(255 255 153)
+  
+}
+
+.card-body{
+  background-color: rgb(255 255 153)
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 8rem;
+  width: 40%;
+}
+.post-number {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.font-author{
+  font-weight: 700;
+  font-size: 20px;
+  font-variant: petite-caps;
+  background: linear-gradient(45deg, cornsilk ,#fffa9d);
+}
+
+.font-title{
+  font-weight: 500;
+  font-size: 15px;
+  font-variant: petite-caps;
+}
+
+.card-title{
+  font-family: monospace;
+  font-weight: 600;
+}
+
+.font-body{
+  font-size: 15px;
+  font-family: monospace;
+}
+.font-category {
+  font-size: 15px;
+  background-color: cornsilk;
+  background: linear-gradient(45deg, cornsilk ,#fffa9d);
+}
+
+
+.container-page {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+li{
+  list-style-type: circle;
+  text-align: start;
+}
+
+.page-item{
+  list-style-type: none;
+}
+
+.navbar-page {
+  align-self: center;
+}
+
+.form-group{
+  width: 30%;
+  align-self: center;
+  margin: 2rem;
+}
+
+@media (max-width: 992px){
+  .container-page{
+    width: 100%;
+  }
+}
+@media (max-width: 576px){
+  .form-group{
+    width: 40%;
+  }
+
+}
+
+@media (max-width: 768px){
+  .card-img-top {
+    height: 10rem;
+  }
+  .font-title{
+    font-weight: 500;
+    font-size: 12px;
+  }
+  
+  .font-body{
+    font-size: 12px;
+  }
+  .card {
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+}
